@@ -42,25 +42,28 @@
             background: #111;
         }
         
-        /* Özel XC5 Metin Logosu */
+        /* Kesin Görünüm İçin Garanti Stiller */
         .xc5-logo {
-            font-size: 54px;
-            font-weight: 800;
+            font-size: 50px !important;
+            font-weight: 900 !important;
             letter-spacing: 2px;
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-            display: flex;
-            align-items: center;
+            display: flex !important;
+            align-items: center !important;
+            justify-content: center !important;
+            visibility: visible !important;
+            opacity: 1 !important;
         }
         .xc5-logo .x {
-            color: #ff7300; /* Turuncu */
+            color: #ff7300 !important;
         }
         .xc5-logo .c {
-            color: #00a2ff; /* Mavi */
+            color: #00a2ff !important;
         }
         .xc5-logo .five {
             background: linear-gradient(90deg, #ff7300 50%, #00a2ff 50%);
             -webkit-background-clip: text;
             -webkit-text-fill-color: transparent;
+            color: #00a2ff; /* Desteklemeyen tarayıcılar için yedek */
         }
 
         .btn-google {
