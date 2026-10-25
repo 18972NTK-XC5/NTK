@@ -42,28 +42,28 @@
             background: #111;
         }
         
-        /* Kesin Görünüm İçin Garanti Stiller */
+        /* Kesin Çözüm: Güvenli ve Görünür XC5 Logosu */
         .xc5-logo {
-            font-size: 50px !important;
-            font-weight: 900 !important;
+            font-size: 52px;
+            font-weight: 900;
             letter-spacing: 2px;
-            display: flex !important;
-            align-items: center !important;
-            justify-content: center !important;
-            visibility: visible !important;
-            opacity: 1 !important;
+            display: flex;
+            align-items: center;
+            justify-content: center;
         }
         .xc5-logo .x {
-            color: #ff7300 !important;
+            color: #ff7300; /* Turuncu */
         }
         .xc5-logo .c {
-            color: #00a2ff !important;
+            color: #00a2ff; /* Mavi */
         }
-        .xc5-logo .five {
-            background: linear-gradient(90deg, #ff7300 50%, #00a2ff 50%);
-            -webkit-background-clip: text;
-            -webkit-text-fill-color: transparent;
-            color: #00a2ff; /* Desteklemeyen tarayıcılar için yedek */
+        /* 5 rakamını iki parçaya bölerek her tarayıcının kesin göstermesini sağladık */
+        .xc5-logo .five-left {
+            color: #ff7300;
+        }
+        .xc5-logo .five-right {
+            color: #00a2ff;
+            margin-left: -4px; /* İki parçayı birleştirir */
         }
 
         .btn-google {
@@ -99,7 +99,9 @@
         <!-- XC5 Metin Logosu -->
         <div class="logo-box">
             <div class="xc5-logo">
-                <span class="x">X</span><span class="c">C</span><span class="five">5</span>
+                <span class="x">X</span>
+                <span class="c">C</span>
+                <span class="five-left">5</span><span class="five-right"></span>
             </div>
         </div>
 
